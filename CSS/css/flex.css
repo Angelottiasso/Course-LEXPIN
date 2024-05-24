@@ -1,0 +1,18 @@
+/*el display junto con flex hace que actue como una fila los elementos que le designes*/
+.fila{
+  display:  flex;
+  justify-content: center; /*eje primario de una fila*/
+  align-items: center; /*eje secundario de una fila*/
+  gap: 20px; /*el gap es para designarle un margen entre elementos*/
+}
+.columna{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center; /*eje pricipal de una columna*/
+  align-items: center; /*eje secundario de una columna*/
+}
+
+
+
+

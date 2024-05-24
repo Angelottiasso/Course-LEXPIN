@@ -1,0 +1,78 @@
+/*selector universal*/
+* {
+  color:white
+}
+/*selector*/
+p{
+  background-color:rgb(0, 132, 255);
+  font-size: 0.6rem;
+  font-weight: 900;
+  /*
+  border-width: 5px;
+  border-color: black;
+  border-style: double;
+  border: 2px solid black;
+  */
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-radius: 35px;
+  width: 120px;
+
+  /*
+  distancia entre un elemento y otro
+  margin: 50px;
+
+  valores en el sentido de las agujas del reloj
+  */
+  margin: 30px 20px 20px 30px;
+
+  /*distancia del contenido con respecto al borde*/
+  padding: 20px 20px 20px;
+  /*el padding funciona dentro de la caja y el margin fuera de la caja*/
+  outline: 2px solid rgb(0, 132, 255);
+  /*para situar el texto de una caja*/
+  text-align: center;
+  /*sombra del texto*/
+  text-shadow: 2px 2px 3px black;
+  /*tipo de letra*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p:hover{
+  background-color: rgba(8, 48, 180, 0.795);
+}
+
+/*
+pseudo clases
+manejan un estado de los elementos HTML
+*/
+
+/*color cuando ya visite el link*/
+a:visited{
+  color:green
+}
+/*cuando no he visitado el link*/
+a:link{
+  color:reds
+}
+/*cuando le doy click en el link*/
+a:active{
+  color:blue
+}
+
+/*
+pseudo elementos 
+manejan una parte especifica del elemento
+*/
+
+
+body{
+  background-image: url("https://www.okchicas.com/wp-content/uploads/2020/03/Perritos-explican-cuarentena-12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ 

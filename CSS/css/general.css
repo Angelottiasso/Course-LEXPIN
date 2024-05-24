@@ -1,0 +1,23 @@
+/*selector universal*/
+*{
+  color:beige
+}
+/*selector normal, pero mucho menos especifico selector*/
+p {
+  color:red
+}
+/*selector de un id en css*/
+#destacado {
+  color:blue
+}
+/*selector de class en css*/
+.subtitulo {
+  color:green;
+}
+/*selector mas especifico*/
+.articulo h2 {
+color:purple;
+}
+.articulo p{
+  color:brown
+}
