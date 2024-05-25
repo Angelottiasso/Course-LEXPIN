@@ -1,0 +1,40 @@
+/* sistema de filas y columnas de golpe (con grid) */
+section{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; (cuantas columnas deseo por fracciones) */
+  /* grid-template-columns: 25% 75%; (usando el %) */
+  grid-template-columns: repeat(3, 1fr); /*atajo-shortcut*/
+  gap: 25px;
+  /* Horizontal */
+  justify-items: center;
+  /* Vertical */
+  align-content: center;
+}
+
+section div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* dos columnas con cada dimension asignada */
+.info{
+  display: grid;
+  grid-template-columns: 33% 66%;
+}
+
+.grupo{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.izquierda{
+  grid-column:span 4;
+}
+.derecha{
+  grid-column:span 8;
+}
+/* una variable para cambiar el color principal de la pagina */
+:root{
+  --main-color-text: white
+}

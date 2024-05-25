@@ -9,7 +9,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* horizontal */
   justify-content: center; /*eje pricipal de una columna*/
+  /* Vertical */
   align-items: center; /*eje secundario de una columna*/
 }
 

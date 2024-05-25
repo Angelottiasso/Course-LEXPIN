@@ -1,0 +1,28 @@
+.caja{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* identificacion */
+  animation-name: ejemplo;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; /*para que se repita*/
+}
+
+/* animacion de transicion de color en una caja */
+
+/* @keyframes ejemplo {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: blue;
+  }
+}*/
+
+@keyframes ejemplo{
+  0% {background-color: red;}
+  25% {background-color: blue;}
+  50% {background-color: green;}
+  75% {background-color: yellow;}
+  100% {background-color: orange;} 
+}
