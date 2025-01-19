@@ -1,0 +1,295 @@
+/* ESTO ES UN COMENTRARIO */
+
+/*
+ESTO ES UN
+COEMNTARIO
+CON VARIAS LINEAS
+*/
+ 
+/* SELECTORES */
+/* Selector por etiqueta html (este selector es en grupo, es decir,
+le aplica a todas las etiquetas con ese nombre) */
+h2{
+  color: grey;
+}
+/* selector por ID (este selector es unico, es decir, como una cedula)*/
+
+#texto1{
+  color: brown;
+}
+
+#texto2{
+  color: blue;
+}
+
+/* selector por clase (este es un selector es en grupo) */
+
+.textgreen{
+  color: green;
+}
+
+.fondorojo{
+ background-color: red;
+}
+
+/* selector en grupo */
+
+#subtitulo3,#subtitulo4{
+  color: fuchsia;
+}
+
+/* selector que es por anidamiento */
+
+span{
+  color: blueviolet;
+}
+
+#divisionone span{
+  color: cadetblue
+}
+
+#divisiontwo span{
+  color: orange;
+}
+
+/* selector universal */
+
+/*{
+  background-color: darkgray;
+}*/
+
+/* variables  (guardar algun dato para evitar perder tiempo) */
+
+:root{
+  --color-favorito: blue; 
+}
+
+main{
+  color: var(--color-favorito);
+}
+
+aside{
+  color: var(--color-favorito);
+}
+
+/* propiedades css para textos */
+
+section h1{
+  /* color: permite darle un color al texto */
+  color: red;
+  /* font-size: permite dale un tamano al texto */
+  font-size: 30px;
+  /* font-weight: permite darle el grosor al texto */
+  font-weight: 700;
+  /* font-family: permite cambiarle la fuente del texto */
+  font-family: sans-serif;
+  /* text-align: permite cambiar la posicion del texto */
+  text-align: center;
+  /* text-decoration : PERMITE CAMBIAR LA DECORACION DEL TEXTO */
+   /*
+    text-decoration-line 
+    text-decoration-line: underline;
+    text-decoration-color 
+    text-decoration-color: black;
+    text-decoration-style 
+    text-decoration-style: solid;
+    text-decoration-thinkness:
+    text-decoration-thickness: 5px;
+  */
+    text-decoration: underline black solid 5px;
+
+  /* text-transform : PERMITE CAMBIAR DE MAYUSCULAS O MINUSCULAS */
+  text-transform: capitalize;
+  /* text-indent : PERMITE CAMBIAR LA IDENTACION */
+  text-indent: 150px;
+  /* letter-spacing : PERMITE CONTROLAR EL ESPACIADO DE LETRAS */
+  letter-spacing: 15px;
+  /* line-height: PERMITE CONTROLAR EL ESPACIO ENTRE LINEA DE TEXTO */
+  line-height: 100px;
+  /* word-spacing : PERMITE CONTROLAR EL ESPACIADO DE PALABRAS */
+  word-spacing: 50px;
+}
+
+section a{
+  text-decoration: none;
+  font-size: 100px;
+  /* text-shadow: PERMITE CONTROLAR LA SOMBRA DEL TEXTO */
+  /*text-shadow: x / y / desenfoque / color */
+  text-shadow: 50px 20px 10px rgba(255, 0, 0, 0.116);
+}
+
+section ul{
+  /* list-style: ; permite modificar el estilo de la lista */
+  list-style: none;
+}
+
+/* tamanos */
+
+#tamanos{
+/* width: nos permite darle un valor a la anchura del elemento */
+width: 100px;
+/*height: nos permite darle un valor a la altura del elemento */
+height: 80px;
+/* max-width : NOS PERMITE COLOCARLE UN LIMITE DE ANCHURA*/
+max-width: 100px;
+/* min-width : NOS PERMITE COLOCARLE UN MINIMO DE ANCHURA */
+min-width: 80px;
+/* max-height : NOS PERMITE COLOCARLE UN LIMITE DE ALTURA */
+max-height: 120px;
+/* min-height : NOS PERMITE COLOCARLE UN MINIMO DE ALTURA */
+min-height: 60px;
+
+background-color: green;
+
+}
+
+#tamano img{
+  /* con modificar el ancho ( width ) la imagen no se distorcionara */
+  /* a diferencia de colocarle ( width y height ) */
+  width: 30px;
+}
+
+/* UNIDADES DE MEDIDA */
+/*
+- em ( se basa en el tamano de fuente del elemento padre)
+- rem (se basa en el tamano de fuente del elemento raiz del documento)
+- vw (viewport width)
+- vh (viewport height)
+- %
+- vmin ()
+- vmax ()
+- px (Pixeles)
+- auto (automatico)
+*/
+
+#umedida{
+font-size: 50px; /*si el tamano del elemento padre es modificado 1em ya no valdra 16px*/
+}
+
+#umedida p{
+  /* font-size: 1em; es igual a 16px (medida predeterminada)*/
+  font-size: 1rem; /*con rem se toma de referencia el elemento raiz*/
+}
+
+#viewportest{
+  width: 50vw; /* 50% DE ANCHURA DEL VIEWPORT WIDTH */
+  height: 80vh; /* 80% DE ALTURA DEL VIWEPORT HEIGHT */
+  background-color: blue;
+}
+
+#porcentaje{
+  height: 500px;
+  background-color: purple;
+}
+
+#porcentaje div{
+  /* PORCENTAJE */
+  width: 50%;
+  height: 80%;
+  background-color: green;
+}
+
+#viewportmaxmin{
+  /* VIEWPORT MIN Y MAX*/
+  width: 80vmax; /* 80% PORCIENTO DEL MAXIMO VALOR DEL VIEWPORT*/
+  height: 400px;
+  background-color: deepskyblue;
+}
+
+#auto{
+  background-color: yellow;
+  height: auto;
+  /*max-height: 500px;*/
+}
+
+#auto div{
+  color: white;
+  height: 200px;
+  background-color: black;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* BACKGROUND (FONDO) */
+#fondo{
+  height: 100vh;
+  /* background-color: Nos permite colocar un color de FONDO*/
+    /* RGBA : R (red) G (Green) B (Blue) A (Alpha) */
+    /*background-color: rgba(175, 27, 64, 0.855);*/
+    /*
+    HEXADECIMAL
+
+    0 = 0 = 0
+    1 = 1
+    2 = 2
+    3 = 3
+    4 = 4
+    5 = 5
+    6 = 6
+    7 = 7
+    8 = 8
+    9 = 9
+    A = 10
+    B = 11
+    C = 12
+    D = 13
+    E = 14
+    F = 15 = 255
+
+    #FFF
+     RGB
+    #(FF) = R (FF) = G (FF) = B (FF) = Alpha | #FFFFFFff
+
+    Convertir de Hexadecimal a RGB
+    #FF5733
+    R = (15 * 16) + 15 = 255
+    G = (5 * 16) + 7 = 87
+    B = (3 * 16) + 3 = 51
+    rgb(255,87,51)
+
+    */
+    /*background-color: #131921;*/
+
+     /* background-image: Nos permite colocar una imagen de FONDO*/
+    /* RUTA IMAGEN INTERNET */
+    /*background-image: url("https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/15/17000856574337.jpg");*/
+    /* RUTA IMAGEN LOCAL*/
+    /*background-image: linear-gradient(to left,rgb(64, 0, 255),yellow, green, red),url("../");*/
+    background-image:linear-gradient(to top,rgba(0, 0, 0, 0.576),transparent), url("https://th.bing.com/th/id/R.a4b2d7d9568da740e7fbb9a0dac9b1d7?rik=GIaUfwWpV5QONw&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f04%2fFondos-de-paisajes.jpg&ehk=My83exi%2bjL12za7MD8g0%2fxIIQR1%2bqpOosDjAXLqK0tw%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+}
+
+#fondo h1{
+  color: white; 
+}
+
+#fondo2{
+  height: 100vh;
+  background-image: 
+  /*personaje*/url("https://images.vexels.com/content/130970/preview/hipster-male-character-2-8ab29b.png"),
+  linear-gradient()
+  /*img fondo*/url('https://static.vecteezy.com/system/resources/previews/026/775/963/non_2x/colorfull-cartoon-lanscape-scene-natur-park-sunset-vector.jpg');
+  /* background-repeat : Nos permite controlar si la imagen de fondo se repite */
+  background-repeat: no-repeat;
+  /* background-size : Nos permite controlar el tamano de la imagen de fondo */
+  /* background-size: 200px, contain; */
+  background-size: 200px, cover, cover;
+  /* background-position: Nos permite controlar la posicion de la imagen de fondo */
+  background-position: center;
+  /* background-attachment: Nos permite fijar el fondo */
+  background-attachment: center;
+}
+
+/*BORDES*/
+
+#bordes{
+ height: 600px;
+ background-color: grey;
+}
+
+#bordes section {
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: none;
+}

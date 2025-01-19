@@ -1,0 +1,23 @@
+/*section 1*/
+
+/* MARGIN */
+
+#margin{
+  width: 450px;
+  height: 450px;
+  background-color: red;
+
+        /* Margenes */
+/* margen en la parte SUPERIOR */
+  /* margin-top: 20px; */
+/* margen del lado DERECHO */
+  /* margin-right: 40px; */
+/* margen de la parte INFERIOR  */
+  /* margin-bottom: 20px; */
+/* margen del lado IZQUIERDO */
+  /* margin-left: 40px; */
+
+  /* manera comunde escribirlo */
+margin: 20px 20px 20px 20px;
+}
+

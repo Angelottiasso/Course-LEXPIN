@@ -1,0 +1,25 @@
+div{
+  background-color: aquamarine;
+}
+
+/*posicion indiferente*/
+.relativo{
+  position: relative;
+  top: 7px; /*alejarse de la parte de arriba*/
+}
+
+/*completamente inmovil*/
+.absoluto{
+position: absolute;
+top: 80px;
+right: 0;
+}
+
+/*completamente fijo en la pantalla*/
+.fijo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/**/
