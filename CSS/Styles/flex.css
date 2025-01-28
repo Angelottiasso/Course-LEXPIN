@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 /*el display junto con flex hace que actue como una fila los elementos que le designes*/
 
 .fila{
@@ -16,7 +21,3 @@
   /* Vertical */
   align-items: center; /*eje secundario de una columna*/
 }
-
-
-
-
