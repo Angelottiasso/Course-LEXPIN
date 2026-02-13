@@ -1,10 +1,10 @@
 /*selector universal*/
-* {
+/* * {
   color:white
-}
+} */
 /*selector*/
 p{
-
+  color: white;
   /*
   background-color: cornflowerblue;
   background-color: rgb(25, 65, 208);
@@ -72,13 +72,39 @@ a:link{
 a:active{
   color:blue
 }
+/*cambia el color del borde cuando se entra en foco con ele elemento*/
+div:focus{
+border-color: black;
+}
+div{
+  color: black;
+}
+#letras{
+  color: white;
+}
 
 /*
 pseudo elementos 
 manejan una parte especifica del elemento
 */
 
+p::first-letter{
+  font-size: 35px;
+}
 
+p::first-line{
+  color:chocolate;
+}
+
+p::after{
+  content:"Adios";
+}
+
+p::before{
+  content:"Hola";
+}
+
+/* esta es la modificacion del body en general */
 body{
   background-image: url('../imagenes/paisajes\ naturales.jpg');
   background-repeat: no-repeat;
